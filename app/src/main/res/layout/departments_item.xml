@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/background_for_menu"
+    android:id="@+id/card">
+    <TextView
+        android:id="@+id/name"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="17dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alekseevskoe"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:id="@+id/address"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="4dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Peterburgskaya, 1"
+        android:textSize="14sp"
+        android:textColor="#808080"
+        android:layout_marginBottom="16dp"
+        />
+
+
+</LinearLayout>

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".View.session1.main.SignActivity">
+
+    <Button
+        android:id="@+id/okBT"
+        android:layout_width="102dp"
+        android:layout_height="36dp"
+        android:background="@drawable/button_background"
+        android:text="Ok"
+        android:visibility="gone"
+        app:backgroundTint="#177D89"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/capchaET" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/scala"
+        android:visibility="gone"
+        android:text="Enter captcha"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/remembermeCB" />
+
+
+
+    <EditText
+        android:id="@+id/capchaET"
+        android:layout_width="170dp"
+        android:layout_height="49dp"
+        android:hint="enter capcha"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/captchaImage" />
+
+
+
+    <ImageView
+        android:id="@+id/sherif"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginBottom="505dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/sherif" />
+
+    <TextView
+        android:id="@+id/wsk"
+        android:layout_width="wrap_content"
+        android:layout_height="52dp"
+        android:layout_marginTop="17dp"
+        android:fontFamily="@font/scala"
+        android:text="WSK POLICE"
+        android:textColor="#48aeba"
+        android:textSize="45sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sherif" />
+
+
+    <EditText
+        android:id="@+id/loginET"
+        android:layout_width="249dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="40dp"
+        android:hint="kafomin"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wsk" />
+
+    <EditText
+        android:id="@+id/passwordET"
+        android:layout_width="249dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:hint="*******"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginET" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/loginET"
+        app:layout_constraintEnd_toStartOf="@+id/loginET"
+        app:layout_constraintTop_toTopOf="@+id/loginET"
+        app:srcCompat="@drawable/key" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/passwordET"
+        app:layout_constraintEnd_toStartOf="@+id/passwordET"
+        app:layout_constraintTop_toTopOf="@+id/passwordET"
+        app:srcCompat="@drawable/lock" />
+
+    <CheckBox
+        android:id="@+id/remembermeCB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remember me"
+        android:fontFamily="@font/scala"
+        app:layout_constraintEnd_toEndOf="@+id/passwordET"
+        app:layout_constraintStart_toStartOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/passwordET" />
+
+    <Button
+        android:id="@+id/signInBT"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:visibility="visible"
+        android:background="@drawable/button_background"
+        android:text="SignIn"
+        app:backgroundTint="#177D89"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/remembermeCB" />
+
+    <Button
+        android:id="@+id/guestBT"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:visibility="visible"
+        android:background="@drawable/button_background"
+        android:text="Guest"
+        app:backgroundTint="#177D89"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signInBT" />
+
+    <ImageView
+        android:id="@+id/captchaImage"
+        android:layout_width="90dp"
+        android:visibility="gone"
+        android:layout_height="90dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/capcha" />
+
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="57dp"
+        android:visibility="gone"
+        android:layout_height="27dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/capchaET"
+        app:layout_constraintEnd_toEndOf="@+id/captchaImage"
+        app:layout_constraintStart_toStartOf="@+id/captchaImage"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/captcha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/scala"
+        android:text="text"
+        android:textColor="#4E009B"
+        android:textSize="12sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toTopOf="@+id/view" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

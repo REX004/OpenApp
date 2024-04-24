@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/green">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/arrow"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show department"
+            android:textSize="22sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/scala"
+            android:layout_gravity="center_horizontal"/>
+
+    </Toolbar>
+
+    <TextView
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Department name:"/>
+    <TextView
+        android:id="@+id/namedepTV"
+        android:layout_marginTop="13dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"/>
+    <TextView
+        android:layout_marginTop="13dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Address:"/>
+    <TextView
+        android:id="@+id/addressdepTV"
+        android:layout_marginTop="13dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Department name:"/>
+    <TextView
+        android:layout_marginTop="13dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Boss:"/>
+    <TextView
+        android:id="@+id/bossdepTV"
+        android:layout_marginTop="13dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Department name:"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_marginTop="13dp"
+                android:layout_marginLeft="20dp"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone:"/>
+            <TextView
+                android:id="@+id/phonedepTV"
+                android:layout_marginTop="13dp"
+                android:layout_marginLeft="20dp"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+7 495 123-45-67
+"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="52dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_marginTop="13dp"
+                android:layout_marginLeft="20dp"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email:"/>
+            <TextView
+                android:id="@+id/emaildepTV"
+                android:layout_marginTop="13dp"
+                android:layout_marginLeft="20dp"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="gromovo@police.kz"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description"/>
+
+        <ImageView
+            android:id="@+id/swap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="260dp"
+
+            android:layout_marginTop="20dp"
+            android:src="@drawable/magic"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/descriptiondevTV"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:textSize="14sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ryan Adams, whose new album Prisoner is out this Friday, was the latest guest on Marc Maron’s podcast “WTF.” Adams discussed encountering the Rolling Stones early in his career (and talking penny loafers with drummer Charlie Watts), his struggles with addiction in the Easy Tiger era"/>
+    <Button
+        android:id="@+id/showBT"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="170dp"
+        android:layout_marginTop="70dp"
+        android:layout_height="36dp"
+        android:text="Show"
+        android:background="@drawable/background_for_menu"
+        app:backgroundTint="@color/green"/>
+
+
+</LinearLayout>

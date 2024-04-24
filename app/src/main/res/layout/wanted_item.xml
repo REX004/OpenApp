@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="58dp"
+    android:background="@drawable/background_for_menu"
+    android:orientation="horizontal"
+    android:id="@+id/card"
+    android:padding="8dp"
+    >
+<!--<ImageView-->
+<!--    android:layout_marginLeft="13dp"-->
+<!--    android:layout_width="33dp"-->
+<!--    android:layout_height="33dp"-->
+<!--    android:layout_gravity="center_vertical"-->
+<!--    android:src="@drawable/userpic"/>-->
+
+    <CheckBox
+        android:id="@+id/choseCB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        />
+    <TextView
+        android:id="@+id/last_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:textSize="16sp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="13dp"/>
+    <TextView
+        android:id="@+id/first_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:textSize="16sp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="13dp"/>
+</LinearLayout>

@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+    <Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/green">
+
+        <ImageView
+            android:id="@+id/backIMG"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/arrow"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Criminal Cases"
+            android:textSize="22sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/scala"
+            android:layout_gravity="center_horizontal"/>
+        <ImageView
+            android:id="@+id/sumbitButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/galochka"
+            android:layout_gravity="end"
+            android:layout_marginEnd="20dp"/>
+
+    </Toolbar>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/progress_horizontal"
+        android:visibility="gone"/>
+    <TextView
+        android:layout_marginLeft="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Number:"
+        android:textSize="18sp"
+        />
+    <EditText
+        android:id="@+id/numberET"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:hint="enter number"
+        android:textSize="18sp"
+        />
+    <View
+        android:layout_marginTop="3dp"
+        android:layout_width="328dp"
+        android:layout_height="2dp"
+        android:background="@color/green"
+        android:layout_marginLeft="15dp"/>
+
+    <TextView
+        android:layout_marginTop="6dp"
+        android:layout_marginLeft="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date:"
+        android:textSize="18sp"
+        />
+    <EditText
+        android:id="@+id/dateET"
+        android:background="@color/white"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter date:"
+        android:textSize="18sp"
+        />
+    <View
+        android:layout_marginTop="3dp"
+        android:layout_width="328dp"
+        android:layout_height="2dp"
+        android:background="@color/green"
+        android:layout_marginLeft="15dp"/>
+
+    <TextView
+        android:layout_marginTop="6dp"
+        android:layout_marginLeft="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Detective:"
+        android:textSize="18sp"
+        />
+    <EditText
+        android:id="@+id/detectiveET"
+        android:background="@color/white"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter detective:"
+        android:textSize="18sp"
+        />
+    <View
+        android:layout_marginTop="3dp"
+        android:layout_width="328dp"
+        android:layout_height="2dp"
+        android:background="@color/green"
+        android:layout_marginLeft="15dp"/>
+
+    <TextView
+        android:layout_marginTop="6dp"
+        android:layout_marginLeft="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Client:"
+        android:textSize="18sp"
+        />
+    <EditText
+        android:id="@+id/clientET"
+        android:background="@color/white"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter client:"
+        android:textSize="18sp"
+        />
+    <View
+        android:layout_marginTop="3dp"
+        android:layout_width="328dp"
+        android:layout_height="2dp"
+        android:background="@color/green"
+        android:layout_marginLeft="15dp"/>
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Category:"
+        android:textSize="18sp"
+        />
+    <EditText
+        android:id="@+id/categpryET"
+        android:background="@color/white"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter category:"
+        android:textSize="18sp"
+        />
+    <View
+        android:layout_marginTop="3dp"
+        android:layout_width="328dp"
+        android:layout_height="2dp"
+        android:background="@color/green"
+        android:layout_marginLeft="15dp"/>
+
+    <LinearLayout
+        android:layout_marginTop="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:orientation="horizontal"
+        android:background="@drawable/background_for_menu"
+        android:gravity="center_vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Robbery"
+            android:textSize="18sp"
+            android:layout_marginLeft="20dp"/>
+
+        <ImageView
+            android:id="@+id/hideIMG"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/check"
+            android:layout_marginLeft="260dp"
+            />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/description_title"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description:"
+        android:textSize="18sp" />
+    <EditText
+        android:id="@+id/descriptionET"
+        android:background="@color/white"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp"
+        android:maxLength="255"
+        android:layout_width="328dp"
+        android:layout_height="wrap_content"
+        android:hint="Description:"
+        android:textSize="18sp" />
+    <View
+        android:id="@+id/description_view"
+        android:layout_marginTop="3dp"
+        android:layout_width="328dp"
+        android:layout_height="2dp"
+        android:background="@color/green"
+        android:layout_marginLeft="15dp"/>
+
+    <TextView
+        android:id="@+id/counter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:text="0 / 255"
+        android:textColor="#95989A"
+        android:layout_marginLeft="283dp"
+        android:layout_marginTop="10dp"/>
+
+</LinearLayout>

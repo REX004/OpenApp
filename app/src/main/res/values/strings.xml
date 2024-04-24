@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">01_wskpolice</string>
+    <string-array name="category_array">
+        <item>Detectives</item>
+        <item>Date</item>
+    </string-array>
+
+    <string-array name="value_array">
+        <item>All</item>
+        <item>Specifically</item>
+    </string-array>
+
+    <string-array name="sort_array">
+        <item>По возрастанию</item>
+        <item>По убыванию</item>
+    </string-array>
+        <string name="select_value">Выберите значение</string>
+        <string name="select_sort">Выберите сортировку</string>
+
+</resources>

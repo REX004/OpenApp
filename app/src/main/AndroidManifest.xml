@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:enableOnBackInvokedCallback="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme._01_wskpolice"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31" >
+        <activity
+            android:name=".View.session1.main.MainSignActivity"
+            android:exported="false" />
+<!--        <activity-->
+<!--            android:name=".View.session2.DepartmentsActivity"-->
+<!--            android:exported="false" />-->
+        <activity
+            android:name=".View.session2.departments.ShowDepartmentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".View.session2.departments.ShowDepMap"
+            android:exported="false" />
+        <activity
+            android:name=".View.session2.departments.DepartmentsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".View.session1.main.MainGuestActivity"
+            android:exported="false" />
+        <activity
+            android:name=".View.session1.paint.PaintActivity"
+            android:exported="false" />
+        <activity
+            android:name=".View.Session3.criminalCase.CriminalCaseShowActivity"
+            android:exported="false" />
+        <activity
+            android:name=".View.session1.photoRobot.PhotoRobotsActivity"
+            android:exported="false" />
+<!--        <activity-->
+<!--            android:name=".View.Session3.criminalCase.NewCriminalCasesActivity"-->
+<!--            android:exported="false" />-->
+        <activity
+            android:name=".View.Session3.evidence.AddEvidenceActivity"
+            android:exported="false" />
+<!--        <activity-->
+<!--            android:name=".View.session2.wanted.WantedActivity"-->
+<!--            android:exported="false" />-->
+        <activity
+            android:name=".View.session2.wanted.ShowWantedActivity"
+            android:exported="false" />
+<!--        <activity-->
+<!--            android:name=".View.session2.ShowDepMap"-->
+<!--            android:exported="false" />-->
+        <activity
+            android:name=".View.session1.photoRobot.NewPhotoRobotActivity"
+            android:exported="false" />
+        <activity
+            android:name=".View.session1.AboutUsActivity"
+            android:exported="false" />
+<!--        <activity-->
+<!--        android:name=".View.session1.main.SignActivity"-->
+<!--        android:exported="false" />-->
+<!--        <activity-->
+<!--            android:name=".View.Session3.evidence.EvidenceActivity"-->
+<!--            android:exported="false" />-->
+<!--        <activity-->
+<!--            android:name=".View.Session3.criminalCase.CriminalCasesActivity"-->
+<!--            android:exported="false" />-->
+        <activity
+            android:name=".View.Session3.criminalCase.CriminalCasesActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
